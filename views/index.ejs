@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./icons/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SAF</div>
+            <nav>
+                <a href="#skills">skills</a>
+                <a href="#project-list">projects</a>
+                <a href="https://github.com/shaiksha176">github</a>
+            </nav>
+            <div class="menu">
+                <img src="./icons/menu.svg" alt="" style="fill: white;">
+
+            </div>
+        </header>
+        <section class="home">
+            <div class="introduction">
+                <h1>Hello,</h1>
+
+                <h1>I'm Shaiksha</h1>
+                <p>A FULL STACK DEVELOPER</p>
+
+            </div>
+            <div class="image">
+                <img src="./icons/programming-img.jpg" alt="img">
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, exercitationem temporibus. Dignissimos
+                    velit optio qui corrupti consequatur voluptatum architecto ullam. Excepturi nam explicabo numquam!
+                    Et esse doloribus excepturi? Eaque, laudantium?</p> -->
+            </div>
+
+        </section>
+        <section>
+            <div class="logos">
+                <a href="https://github.com/shaiksha176">
+
+                    <img src="./icons/github.png" alt="github" id="git">
+
+                </a>
+
+                <a href="https://www.freecodecamp.org/shaiksha176"><img src="./icons/freecodecamp.png" alt="fcc"
+                        id="fcc"> </a>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Tools I use</h2>
+            <div class="tools">
+                <div>
+                    <img src="./icons/html-5.png" alt="html-5">
+                    <p>html</p>
+                </div>
+                <div>
+                    <img src="./icons/css3.png" alt="css3">
+                    <p>css</p>
+                </div>
+                <div>
+                    <img src="./icons/javascript.png" alt="js">
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src="./icons/react.png" alt="react">
+                    <p>react js</p>
+                </div>
+                <div>
+                    <img src="./icons/jquery.png" alt="jquery">
+                    <p>jquery</p>
+                </div>
+                <div>
+                    <img src="./icons/nodejs.png" alt="node">
+                    <p>node js</p>
+                </div>
+                <!-- <div>
+                    <img src="./icons/expressjs.jpg" alt="express" id="express">
+                    <p>express js</p>
+                </div> -->
+                <div>
+                    <img src="./icons/mysql.png" alt="mysql">
+                    <p>mysql</p>
+                </div>
+                <div>
+                    <img src="./icons/mongodb.png" alt="mongo">
+                    <p>mongodb</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="project-list">
+            <h2>Some of my projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./icons/socket io.png" alt="">
+                    <div class="card-body">
+                        <p><strong>Node js chat app</strong></p>
+                        <p class="secondary-text">Developed with</p>
+                        <ul>
+                            <li>express js</li>
+                            <li>socket io</li>
+                            <li>heroku</li>
+                        </ul>
+                        <a href="https://github.com/shaiksha176/node-js-chat-application">know more</a>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./icons/movie img.png" alt="">
+                    <div class="card-body">
+                        <p><strong>Movie Search app</strong></p>
+                        <p class="secondary-text">Developed with</p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>tmdb api</li>
+                            <li>heroku</li>
+                        </ul>
+                        <a href="https://github.com/shaiksha176/Movie-search">know more</a>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./icons/github-jobs.png" alt="">
+                    <div class="card-body">
+                        <p><strong>Github Jobs</strong></p>
+                        <p class="secondary-text">Developed with</p>
+                        <ul>
+                            <li>React js</li>
+                            <li>Github jobs api</li>
+                            <li>heroku</li>
+                        </ul>
+                        <a href="https://github.com/shaiksha176/github-jobs">know more</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        email : <span>iamshaiksha17@gmail.com</span>
+    </footer>
+    <script>
+        let menu = document.querySelector('.menu')
+        let nav = document.querySelector('nav')
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('toggle-list')
+        })
+    </script>
+</body>
+
+</html>

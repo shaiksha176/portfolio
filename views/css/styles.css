@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  /* background-color: aquamarine; */
+  margin: 1em 0;
+}
+
+header .logo {
+  font-weight: 700;
+  color: #0f297c;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 40px;
+  color: black;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #0f297c;
+}
+
+.menu {
+  display: none;
+}
+.home {
+  margin-top: 3em;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction {
+  width: 60%;
+}
+.image {
+  width: 40%;
+  /* border: 1px solid black; */
+}
+
+.introduction h1 {
+  font-size: 4.5rem;
+  color: #0f297c;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.5;
+}
+.introduction p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: black;
+  /* margin-top: 1em; */
+}
+/* .logos {
+  margin-top: 1em;
+} */
+.logos {
+  padding-bottom: 4em;
+  display: flex;
+  align-items: center;
+}
+#git {
+  width: 60px;
+  height: 60px;
+  margin-right: 4em;
+}
+#fcc {
+  width: 71px;
+  height: 49px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.skills {
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 2px sienna solid; */
+  margin-top: 5em;
+  /* background-color: aqua; */
+}
+.skills h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+.tools {
+  /* background-color: aqua; */
+  margin: 1em 0;
+  /* border: 1px #0f297c solid; */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  /* align-items: center; */
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 200px 0px;
+  row-gap: 2px;
+  column-gap: 20px;
+}
+
+.tools div {
+  /* background-color: #0f297c; */
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 62%;
+  width: 60%;
+  /* width: 250px;
+  height: 250px; */
+}
+.tools div p {
+  text-align: center;
+}
+#express {
+  width: 100px;
+}
+
+/* project section */
+
+.projects h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid #0f297c; */
+  width: 100%;
+  margin-bottom: 2em;
+}
+.card {
+  /* border: 1px salmon solid; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 0.5em;
+}
+.secondary-text {
+  padding: 0.5em 0;
+  color: gray;
+  font-size: 0.9rem;
+}
+ul {
+  /* padding: 0; */
+  /* margin: 0; */
+  list-style: none;
+  font-size: 0.85rem;
+  color: gray;
+  /* background-color: #0f297c; */
+  margin-left: 2em;
+}
+li {
+}
+a {
+  text-decoration: none;
+  /* font-style: italic; */
+  font-size: 0.8em;
+}
+footer {
+  background-color: #0f297c;
+  color: white;
+  display: flex;
+  padding-left: 2em;
+  align-items: center;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+footer span {
+  margin-left: 0.5em;
+}
+footer img {
+  /* background-color: white;
+  border-radius: 6px; */
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  backdrop-filter: white;
+  padding-right: 25px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu {
+    display: block;
+    z-index: 1;
+  }
+  nav {
+    background-color: #0f297c;
+    height: 100vh;
+    width: 80%;
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform-origin: right;
+    display: flex;
+    flex-direction: column;
+
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    padding-top: 4em;
+  }
+  nav a {
+    display: block;
+    margin: 2em;
+    color: white;
+    letter-spacing: 2px;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: white;
+  }
+  .toggle-list {
+    opacity: 1;
+  }
+  .home {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.4em;
+    /* border: 2px solid violet; */
+  }
+  .introduction {
+    order: 2;
+    width: 100%;
+    /* border: #0f297c 1px solid; */
+    padding-left: 1.2em;
+  }
+  .introduction h1 {
+    font-size: 1.2rem;
+    color: #0f297c;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .introduction p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: black;
+    /* margin-top: 1em; */
+  }
+  .image {
+    order: 1;
+    width: 100%;
+  }
+  .image img {
+    width: 100%;
+  }
+  .logos {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1.2em;
+    /* border: 2px salmon solid; */
+  }
+  #git {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+  }
+  #fcc {
+    width: 51px;
+    height: 29px;
+  }
+  .skills {
+    margin-top: 1em;
+  }
+  .skills h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    /* border: 1px saddlebrown solid; */
+  }
+  .tools {
+    /* border: 1px slateblue solid; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* grid-template-columns: repeat(3, 150px); */
+    grid-template-rows: 140px 140px;
+    max-width: 100%;
+    column-gap: 0px;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2px;
+  }
+  .tools div {
+    /* border: 1px #0f297c solid; */
+    align-self: center;
+    justify-content: space-between;
+    height: 100%;
+    /* width: 33%; */
+  }
+  .projects {
+    /* border: 1px salmon solid; */
+
+    padding: 1.2em 0;
+  }
+  .projects h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+  }
+  .cards {
+    overflow-x: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 1em;
+  }
+
+  .card {
+    width: 80%;
+    margin-right: 0.5em;
+    /* padding-bottom: 1em; */
+
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .card img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+  }
+  footer {
+    padding: 1em 0 1em 1em;
+  }
+}
